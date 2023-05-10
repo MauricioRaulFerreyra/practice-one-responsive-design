@@ -342,19 +342,19 @@ p {
 /************* MENU *************/
 
 .menu-btn {
-  margin-right: 1rem;
+  margin-right: 2rem;
   padding: 0;
-  outline: 5px solid var(--first-color);
+  outline: 5px solid var(--white-color);
   border: 1;
   cursor: pointer;
-  background-color: var(--second-color);
+  background-color: var(--first-color);
   width: 10vw;
   height: 6vh;
 }
 
 
 .menu-btn svg {
-  fill: var(--first-color);
+  fill: var(--white-color);
 }
 
 .menu {
