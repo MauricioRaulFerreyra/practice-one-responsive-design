@@ -342,25 +342,21 @@ p {
 /************* MENU *************/
 
 .menu-btn {
-  margin: 1rem 1.5rem 1rem 1rem;
-  padding: 0;
-  outline: 5px medium var(--white-color);
-  border: 1;
+  outline: thin solid var(--first-color);
+  border: 0;
   cursor: pointer;
-  background-color: #520e69;
-  width: 12vw;
-  height: 5vh;
+  background-color: var(--second-color);
 }
 
 
 .menu-btn svg {
-  fill: var(--white-color);
+  fill: var(--first-color);
 }
 
 .menu {
   position: fixed;
   left: 0;
-  bottom: 8rem;
+  bottom: var(--header-height);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -376,8 +372,8 @@ p {
 }
 
 .menu a {
-  padding: 1.5rem;
-  font-size: 4rem;
+  padding: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -398,20 +394,17 @@ p {
   }
 
   .menu {
+    padding-top: .3rem;
     position: static;
     width: auto;
     flex-direction: row;
+    align-items: c;
     opacity: 1;
     pointer-events: auto;
   }
 
   .menu a {
     padding: 0 1rem;
-    font-size: 1.9rem;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: var(--first-color);
   }
 
   .menu a:last-child {
@@ -688,28 +681,25 @@ progress::-webkit-progress-value {
   bottom: 0;
   z-index: 999;
   width: 100%;
-  padding: 0.1rem;
-  /* height: var(--header-height); */
+  height: var(--header-height);
+  padding: 1rem;
   background-color: var(--second-color);
 }
 
 .header>.container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .logo a {
-  margin-left: 1.5rem;
-  color: var(--white-color);
-  font-weight: 500;
-  font-size: 3.5vw;
   text-decoration: none;
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .logo span {
-  font-size: 3.5vw;
-  font-weight: 500;
   color: var(--first-color);
 }
 
@@ -750,18 +740,9 @@ progress::-webkit-progress-value {
     justify-content: space-evenly;
   }
 
-
   h2 {
     font-size: 4vw;
   }
-
-  .header>.container {
-    padding: 0.5rem 0 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
 
   .services>.container {
     display: grid;
@@ -815,20 +796,8 @@ progress::-webkit-progress-value {
   .header {
     position: sticky;
     top: 0;
-    padding: 0.1rem;
-    height: var(--header-height);
-  }
-
-  .header>.container {
-    margin-top: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo a {
-    padding: 2rem;
-    font-size: 2rem;
+    padding: 0.5rem;
+    height: calc(var(--header-height)-0.5rem);
   }
 
   .services>.container {
