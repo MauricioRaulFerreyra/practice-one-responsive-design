@@ -19,7 +19,7 @@
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --font: "Raleway", sans-serif;
   --max-width: 1200px;
-  --header-height: 4rem;
+  --header-height: 6rem;
   --comodin-color: #d90062;
 }
 
@@ -342,6 +342,7 @@ p {
 /************* MENU *************/
 
 .menu-btn {
+  width: 50px;
   outline: thin solid var(--first-color);
   border: 0;
   cursor: pointer;
@@ -682,21 +683,20 @@ progress::-webkit-progress-value {
   z-index: 999;
   width: 100%;
   height: var(--header-height);
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: var(--second-color);
 }
 
 .header>.container {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 .logo a {
   text-decoration: none;
   color: var(--white-color);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .logo span {
@@ -798,6 +798,10 @@ progress::-webkit-progress-value {
     top: 0;
     padding: 0.5rem;
     height: calc(var(--header-height)-0.5rem);
+  }
+
+  .logo a {
+    font-size: 2rem;
   }
 
   .services>.container {
