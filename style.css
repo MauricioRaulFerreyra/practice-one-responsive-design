@@ -19,7 +19,7 @@
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --font: "Raleway", sans-serif;
   --max-width: 1200px;
-  --header-height: 7vh;
+  --header-height: 4rem;
   --comodin-color: #d90062;
 }
 
@@ -342,29 +342,25 @@ p {
 /************* MENU *************/
 
 .menu-btn {
-  margin: 0.5rem 1.5rem 0.5rem 0.5rem;
+  margin: 1rem 1.5rem 1rem 1rem;
   padding: 0;
-  outline: 5px solid var(--first-color);
+  outline: 5px medium var(--white-color);
   border: 1;
   cursor: pointer;
-  background-color: #623372;
+  background-color: #520e69;
   width: 12vw;
   height: 5vh;
 }
 
 
-/* .menu-btn svg {
+.menu-btn svg {
   fill: var(--white-color);
-} */
-
-.menu-btn i {
-  font-size: 3vw;
 }
 
 .menu {
   position: fixed;
   left: 0;
-  bottom: var(--header-height);
+  bottom: 6rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -712,6 +708,7 @@ progress::-webkit-progress-value {
 }
 
 .logo span {
+  font-weight: 600;
   color: var(--first-color);
 }
 
@@ -758,6 +755,7 @@ progress::-webkit-progress-value {
   }
 
   .header>.container {
+    padding: 0.5rem 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -821,6 +819,7 @@ progress::-webkit-progress-value {
   }
 
   .header>.container {
+    margin-top: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
