@@ -61,7 +61,7 @@ h1 {
 h2 {
   padding: 0.3rem;
   margin: 0;
-  font-size: 12vw;
+  font-size: 4rem;
 }
 
 h3 {
@@ -102,10 +102,10 @@ p {
 .carousel label {
   border: medium solid var(--white-color);
   border-radius: 50%;
-  margin: 1rem;
+  margin: 1rem 2rem;
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   cursor: pointer;
 }
 
@@ -213,10 +213,10 @@ p {
 
 @media screen and (min-width:1024px) {
   .carousel label {
-    margin: 1rem;
+    margin: 0 1.5rem;
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
+    width: 1.75rem;
+    height: 1.75rem;
   }
 }
 
@@ -319,7 +319,7 @@ p {
 
 .hero-image-opacity {
   width: 100%;
-  min-height: 100vh;
+  min-height: 101vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -572,23 +572,8 @@ progress::-webkit-progress-value {
   color: var(--title-color);
 }
 
-.section-title-proyects {
-  margin: 2rem auto 0;
-  padding: 0.5rem 1rem;
-  text-align: center;
+.white-color {
   color: var(--white-color);
-}
-
-@media screen and (min-width: 768px) {
-  .section-title-proyects {
-    border-top: thin solid var(--comodin-color);
-    border-bottom: thin solid var(--comodin-color);
-    margin: 2rem auto 0;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    color: var(--white-color);
-    width: 350px;
-  }
 }
 
 .text-center {
@@ -746,10 +731,6 @@ progress::-webkit-progress-value {
     justify-content: space-evenly;
   }
 
-  h2 {
-    font-size: 4vw;
-  }
-
   .services>.container {
     display: grid;
     grid-template-columns: repeat(2, 45%);
@@ -761,9 +742,6 @@ progress::-webkit-progress-value {
     grid-column: span 2;
   }
 
-  .section-title {
-    width: 350px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -789,6 +767,10 @@ progress::-webkit-progress-value {
     margin-bottom: 0;
   }
 
+  h2 {
+    font-size: 2.5rem;
+  }
+
   h3 {
     font-size: 1.8vw;
   }
@@ -810,15 +792,15 @@ progress::-webkit-progress-value {
     font-size: 2rem;
   }
 
+  .section-title {
+    margin-bottom: 0;
+  }
+
   .services>.container {
     grid-template-columns: repeat(3, 30%);
   }
 
   .services .section-title {
     grid-column: span 3;
-  }
-
-  .section-title {
-    width: 350px;
   }
 }
