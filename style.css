@@ -19,7 +19,7 @@
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --font: "Raleway", sans-serif;
   --max-width: 1200px;
-  --header-height: 6rem;
+  --header-height: 8rem;
   --comodin-color: #d90062;
 }
 
@@ -342,16 +342,17 @@ p {
 /************* MENU *************/
 
 .menu-btn {
-  width: 50px;
-  outline: thin solid var(--first-color);
+  border-radius: 20px;
+  width: 70px;
+  outline: thin solid #d0c4d4;
   border: 0;
   cursor: pointer;
-  background-color: var(--second-color);
+  background-color: var(--first-color);
 }
 
 
 .menu-btn svg {
-  fill: var(--first-color);
+  fill: var(--white-color);
 }
 
 .menu {
@@ -374,7 +375,7 @@ p {
 
 .menu a {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -406,6 +407,7 @@ p {
 
   .menu a {
     padding: 0 1rem;
+    font-size: 1.5rem;
   }
 
   .menu a:last-child {
@@ -683,7 +685,7 @@ progress::-webkit-progress-value {
   z-index: 999;
   width: 100%;
   height: var(--header-height);
-  padding: 1.5rem;
+  padding: 2rem;
   background-color: var(--second-color);
 }
 
@@ -696,7 +698,7 @@ progress::-webkit-progress-value {
   text-decoration: none;
   color: var(--white-color);
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .logo span {
