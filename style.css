@@ -239,11 +239,12 @@ p {
   margin: 1rem auto;
   display: block;
   width: 100%;
+  min-height: 5vh;
 }
 
 .contact-form input,
 .contact-form textarea {
-  font-size: 0.85rem;
+  font-size: 2rem;
   font-family: var(--font);
 }
 
@@ -535,8 +536,8 @@ progress::-webkit-progress-value {
   border-radius: 0.5rem;
   padding: 0.3rem;
   display: inline-block;
-  width: 20vw;
-  height: 4vh;
+  width: 35vw;
+  /* height: 4vh; */
   font-size: 6vw;
   font-weight: bold;
   text-decoration: none;
