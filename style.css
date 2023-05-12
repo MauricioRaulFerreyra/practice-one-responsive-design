@@ -72,8 +72,14 @@ h3 {
 
 h4 {
   padding: 0.5rem;
-  margin: 0;
+  /* margin: 0; */
   font-size: 3.5vw;
+}
+
+h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 3vw;
 }
 
 img {
@@ -635,8 +641,8 @@ progress::-webkit-progress-value {
 .contact-card {
   margin: 1rem auto;
   padding: 1rem;
-  width: 70vw;
-  height: 25vh;
+  width: 80vw;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -645,18 +651,21 @@ progress::-webkit-progress-value {
 
 
 .contact-card>svg {
-  width: 2rem;
-  height: 2rem;
+  width: 20vw;
+  height: 10vh;
   fill: var(--comodin-color);
 }
 
-.contact-card>small {
+/* .contact-card>small {
   margin-top: -1rem;
-}
+} */
 
 .contact-cards {
-  display: grid;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .footer {
@@ -705,6 +714,8 @@ progress::-webkit-progress-value {
 }
 
 .service-card svg {
+  width: 70px;
+  height: 70px;
   margin-top: 1.25rem;
   fill: var(--comodin-color);
 }
@@ -716,20 +727,11 @@ progress::-webkit-progress-value {
 }
 
 .social-media svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 @media screen and (min-width: 768px) {
-
-  .contact-card {
-    width: 90%;
-  }
-
-  .contact-cards {
-    grid-template-columns: repeat(2, 48%);
-    justify-content: space-evenly;
-  }
 
   .services>.container {
     display: grid;
@@ -752,15 +754,14 @@ progress::-webkit-progress-value {
     align-content: center;
   }
 
-
-  .contact-card {
-    width: 100%;
+  .contact-cards {
+    flex-direction: row;
   }
 
-  .contact-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 24%);
-    justify-content: space-between;
+  .contact-card {
+    margin: 1rem 0.5rem 0 0.5rem;
+    padding: .5rem;
+    width: 20vw;
   }
 
   .footer {
@@ -781,6 +782,10 @@ progress::-webkit-progress-value {
     font-size: 1.1rem;
   }
 
+  h5 {
+    font-size: 1vw;
+  }
+
   .header {
     position: sticky;
     top: 0;
@@ -793,14 +798,17 @@ progress::-webkit-progress-value {
   }
 
   .section-title {
+    width: 50%;
     margin-bottom: 0;
   }
 
-  .services>.container {
-    grid-template-columns: repeat(3, 30%);
+  .service-card svg {
+    width: 50px;
+    height: 50px;
   }
 
-  .services .section-title {
-    grid-column: span 3;
+  .social-media svg {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
