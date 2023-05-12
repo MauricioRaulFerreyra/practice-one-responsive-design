@@ -72,7 +72,7 @@ h3 {
 
 h4 {
   padding: 0.5rem;
-  /* margin: 0; */
+  margin: 0;
   font-size: 3.5vw;
 }
 
@@ -406,7 +406,7 @@ p {
     position: static;
     width: auto;
     flex-direction: row;
-    align-items: c;
+    align-items: center;
     opacity: 1;
     pointer-events: auto;
   }
@@ -507,12 +507,10 @@ progress::-webkit-progress-value {
 
 .btn {
   margin: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   padding: 0.3rem;
   display: inline-block;
-  width: 25vw;
-  font-size: 6vw;
-  font-weight: bold;
+  width: 40vw;
   text-decoration: none;
   color: var(--white-color);
   background-color: var(--first-color);
@@ -600,7 +598,7 @@ progress::-webkit-progress-value {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 18vw;
+    width: 12vw;
     height: 6vh;
   }
 
@@ -639,16 +637,15 @@ progress::-webkit-progress-value {
 }
 
 .contact-card {
-  margin: 1rem auto;
-  padding: 1rem;
+  margin: .5rem auto;
+  padding: .5rem;
   width: 80vw;
-  height: 35vh;
+  height: 25vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
-
 
 .contact-card>svg {
   width: 20vw;
@@ -656,16 +653,8 @@ progress::-webkit-progress-value {
   fill: var(--comodin-color);
 }
 
-/* .contact-card>small {
+.contact-card>small {
   margin-top: -1rem;
-} */
-
-.contact-cards {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer {
@@ -722,16 +711,24 @@ progress::-webkit-progress-value {
 
 
 .social-media a {
-  padding: 0 0.4rem;
+  padding: 0 1rem;
   text-decoration: none;
 }
 
 .social-media svg {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 @media screen and (min-width: 768px) {
+
+  .contact-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .services>.container {
     display: grid;
@@ -744,6 +741,9 @@ progress::-webkit-progress-value {
     grid-column: span 2;
   }
 
+  .social-media a {
+    padding: 0 0.4rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
