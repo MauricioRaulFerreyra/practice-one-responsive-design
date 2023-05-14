@@ -47,6 +47,7 @@ body {
 a {
   color: var(--link-color);
   transition: all 0.5s ease-out;
+  text-decoration: none;
 }
 
 a:hover {
@@ -117,7 +118,6 @@ p {
 
 .carousel .slides {
   padding-left: 0;
-  /* 100% por cada slide */
   width: 400%;
   display: flex;
   list-style: none;
@@ -537,7 +537,6 @@ progress::-webkit-progress-value {
   padding: 0.3rem;
   display: inline-block;
   width: 35vw;
-  /* height: 4vh; */
   font-size: 6vw;
   font-weight: bold;
   text-decoration: none;
@@ -654,10 +653,6 @@ progress::-webkit-progress-value {
   fill: var(--comodin-color);
 }
 
-.contact-card>small {
-  margin-top: -1rem;
-}
-
 .footer {
   margin-bottom: var(--header-height);
   padding: 0.5rem;
@@ -717,8 +712,8 @@ progress::-webkit-progress-value {
 }
 
 .social-media svg {
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 @media screen and (min-width: 768px) {
